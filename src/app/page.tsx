@@ -1,5 +1,5 @@
-import ConfigSection from "@/Views/CapabilitiesSection/CapabilitiesSection";
-import HeroSection from "@/Views/HeroSection/HeroSection";
+import ConfigSection from "@/views/CapabilitiesSection/CapabilitiesSection";
+import HeroSection from "@/views/HeroSection/HeroSection";
 
 export default function Home() {
   return (
