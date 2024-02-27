@@ -3,7 +3,7 @@ import SectionBlock from "@/components/SectionBlock/SectionBlock";
 const ConfigSection = () => {
   return (
     <section>
-      <h2 className="text-center text-2xl text-primary underline underline-offset-6 font-semibold pb-4">
+      <h2 className="text-center text-4xl text-gray-200 underline underline-offset-6 font-semibold mb-10">
         Product Capabilities
       </h2>
       <div className="flex flex-col md:flex-row gap-8">
