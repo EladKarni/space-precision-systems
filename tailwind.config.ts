@@ -9,6 +9,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [daisyui],
+  plugins: [require("daisyui")],
 };
 export default config;
