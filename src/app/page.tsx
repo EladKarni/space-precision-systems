@@ -1,9 +1,9 @@
-import ConfigSection from "@/Views/ConfigSection/ConfigSection";
+import ConfigSection from "@/Views/CapabilitiesSection/CapabilitiesSection";
 import HeroSection from "@/Views/HeroSection/HeroSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-8">
+    <main className="flex min-h-screen flex-col items-center gap-8 mx-8">
       <HeroSection />
       <ConfigSection />
     </main>
