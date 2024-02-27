@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
-    <div className="hero w-full bg-black h-[50vh] md:h-[75vh]">
-      <video loop autoPlay muted className="h-[50vh] md:h-[75vh]">
+    <div className="hero w-full bg-black max-h-[50vh]">
+      <video loop autoPlay muted className="max-h-[50vh]">
         <source src="bg-earth-rotating.webm" type="video/mp4" />
       </video>
       <div className="hero-content text-center text-neutral-content">

@@ -10,7 +10,7 @@ type SectionBlockProps = {
 const SectionBlock = ({ title, snippet, children }: SectionBlockProps) => {
     return (
       <div className="card">
-        <div className="card min-w-64 max-w-[30rem] bg-base-100 shadow-xl">
+        <div className="card min-w-64 max-w-[24rem] bg-base-100 shadow-xl">
           <figure>
             <Image
               src={placeholderImage}
