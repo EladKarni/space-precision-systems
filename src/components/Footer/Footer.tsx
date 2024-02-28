@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 mt-10 bg-base-200 text-base-content">
+    <footer className="footer p-10 mt-[7.5rem] bg-base-200 text-base-content">
       <aside>
         <Link href="/" className="-my-12">
           <Image src={Logo} alt="Logo" width={200} height={128} color="white" />
