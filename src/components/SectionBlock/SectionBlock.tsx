@@ -14,7 +14,7 @@ const SectionBlock = ({
   children,
 }: SectionBlockProps) => {
   return (
-    <div className="card">
+    <div className="card m-auto lg:m-0">
       <div className="card bg-base-100 min-h-[525px] max-w-[500px]">
         <figure className="scale-75 overflow-visible -m-32 drop-shadow-lg">
           <Image src={image} alt="alt text here" className="rounded-t-md" />

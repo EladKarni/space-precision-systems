@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
@@ -16,11 +17,8 @@
 }
 
 body {
-    height: calc(100vh - 120px);
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    background-image: url("../../public/bg-stars.png");
+        background-size: 450px;
 }
 
 @layer utilities {

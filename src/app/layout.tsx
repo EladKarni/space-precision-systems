@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="spstheme" style={{ background: "black" }}>
+    <html lang="en" data-theme="spstheme" className="bg-stary-night">
       <body className={inter.className}>
         <Navbar />
         {children}
