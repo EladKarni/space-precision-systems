@@ -8,7 +8,23 @@ const config: Config = {
     "./src/views/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  daisyui: {
+    themes: [
+      {
+        spstheme: {
+          "primary": "#414E80",
+          "secondary": "#BEC7D8",
+          "accent": "#465063",
+          "neutral": "#3E4B65",
+          "base-100": "#212631",
+          "info": "#0083ba",
+          "success": "#00b04c",
+          "warning": "#ffb700",
+          "error": "#ff5b6e",
+        },
+      },
+    ],
+  },
   plugins: [daisyui],
 };
 export default config;

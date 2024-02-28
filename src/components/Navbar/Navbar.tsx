@@ -1,28 +1,20 @@
 import Image from "next/image";
+import Logo from "../../../public/logo.svg";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 flex justify-between">
-      <div className=" grow max-w-48 h-10 relative">
-        <Image src="/logo.svg" alt="Logo" fill color="white" />
-      </div>
+      <Link href="/" className="-my-12">
+        <Image src={Logo} alt="Logo" width={200} height={128} color="white" />
+      </Link>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text font-semibold">
           <li>
-            <a>Link</a>
+            <Link href={"/"}>Learn More</Link>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 rounded-t-none">
-                <li>
-                  <a>Link 1</a>
-                </li>
-                <li>
-                  <a>Link 2</a>
-                </li>
-              </ul>
-            </details>
+            <Link href={"/"}>Contact</Link>
           </li>
         </ul>
       </div>
