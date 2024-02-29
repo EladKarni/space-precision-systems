@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-base-100 flex justify-center">
-      <div className="navbar lg:px-0 lg:max-w-[1366px] flex justify-between">
+    <nav className="bg-base-100">
+      <div className="navbar xl:max-w-[1366px] flex justify-between m-auto px-4 2xl:px-0">
         <Link href="/" className="-my-12 lg:-ml-2">
           <Image
             src={Logo}
@@ -16,7 +16,7 @@ const Navbar = () => {
             className="-my-2"
           />
         </Link>
-        <div className="flex-none lg:-mr-6">
+        <div className="flex-none">
           <ul className="menu menu-horizontal text font-semibold">
             <li>
               <Link href={"/"}>Learn More</Link>

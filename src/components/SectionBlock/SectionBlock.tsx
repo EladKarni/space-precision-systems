@@ -15,9 +15,9 @@ const SectionBlock = ({
 }: SectionBlockProps) => {
   return (
     <div className="card m-auto lg:m-0">
-      <div className="card bg-base-100 min-h-[525px] max-w-[500px]">
-        <figure className="scale-75 overflow-visible -m-32 drop-shadow-lg">
-          <Image src={image} alt="alt text here" className="rounded-t-md" />
+      <div className="card bg-secondary/45 min-h-[425px] max-w-[450px] backdrop-blur-sm">
+        <figure className="scale-[.65] md:scale-75 overflow-visible -m-18 max-h-[300px]">
+          <Image src={image} alt="alt text here" />
         </figure>
         <div className="card-body p-4 mt-6">
           <h2 className="card-title">{title}</h2>

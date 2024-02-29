@@ -4,7 +4,7 @@ import Valve from "../../../public/valve.png";
 
 const ConfigSection = () => {
   return (
-    <section className="w-full">
+    <section>
       <div className="text-center mb-16">
         <h2 className="text-4xl text-secondary font-semibold mb-2">
           Product Capabilities
@@ -14,7 +14,7 @@ const ConfigSection = () => {
           Sed semper ligula sed lorem tincidunt dignissim.
         </p>
       </div>
-      <div className="flex flex-col gap-16 lg:flex-row justify-between">
+      <div className="flex flex-col gap-28 md:gap-16 lg:flex-row justify-around 2xl:justify-between">
         <SectionBlock
           title="Mechanical Parts"
           snippet="Somethin short and sweet to get people engaged with the content"
