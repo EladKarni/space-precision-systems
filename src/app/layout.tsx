@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import clsx from "clsx";
+import StarOverlay from "@/components/StarOverlay/StarOverlay";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="spstheme" className="bg-stary-night">
-      <body className={inter.className}>
+    <html lang="en" data-theme="spstheme" className="overflow-x-hidden">
+      <body className={clsx(inter.className, "relative h-screen ")}>
         <Navbar />
         {children}
         <Footer />

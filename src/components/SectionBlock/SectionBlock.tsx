@@ -1,9 +1,11 @@
+import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 
 type SectionBlockProps = {
   title: string;
   snippet: string;
   image: StaticImageData;
+  animStagger: string;
   children: string;
 };
 
@@ -11,11 +13,12 @@ const SectionBlock = ({
   title,
   snippet,
   image,
+  animStagger,
   children,
 }: SectionBlockProps) => {
   return (
-    <div className="card m-auto lg:m-0">
-      <div className="card bg-secondary/45 min-h-[425px] max-w-[450px] backdrop-blur-sm">
+    <div className={clsx(`card m-auto lg:m-0`, animStagger)}>
+      <div className="card bg-secondary/30 min-h-[425px] max-w-[450px] backdrop-blur-sm">
         <figure className="scale-[.65] md:scale-75 overflow-visible -m-18 max-h-[175px]">
           <Image src={image} alt="alt text here" />
         </figure>

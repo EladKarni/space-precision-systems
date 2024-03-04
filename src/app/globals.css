@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
     max-width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 1)), url('/bg-stars.png'), #080808;
+        background-size: 600px;
+        background-attachment: fixed;
 }
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -16,14 +17,13 @@
         --background-end-rgb: 0, 0, 0;
     }
 }
-
-body {
-    background-image: url("../../public/bg-stars.png");
-        background-size: 450px;
-}
-
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
+}
+.stars-background {
+    background-image: url('/bg-stars.png');
+    background-size: 600px;
+    overflow: hidden;
 }

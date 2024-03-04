@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-base-100">
+    <nav className="transparent fixed top-0 w-screen">
       <div className="navbar xl:max-w-[1366px] flex justify-between m-auto px-4 2xl:px-0">
         <Link href="/" className="-my-12 lg:-ml-2">
           <Image

@@ -18,6 +18,7 @@ const ConfigSection = () => {
         <SectionBlock
           title="Mechanical Parts"
           snippet="Somethin short and sweet to get people engaged with the content"
+          animStagger="animate-hovering-panel-100"
           image={Gimble}
         >
           In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar.
@@ -26,6 +27,7 @@ const ConfigSection = () => {
         <SectionBlock
           title="Mechanical Parts"
           snippet="Somethin short and sweet to get people engaged with the content"
+          animStagger="animate-hovering-panel-300"
           image={Valve}
         >
           In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar.

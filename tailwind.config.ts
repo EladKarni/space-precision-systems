@@ -8,6 +8,25 @@ const config: Config = {
     "./src/views/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "prlx-front": `url("/asfalt-light.png")`,
+        "prlx-back": `url("/bg-stars.png")`,
+      },
+      animation: {
+        "hovering-panel-100": "ease hovering 6s infinite 0.1s reverse",
+        "hovering-panel-300": "ease hovering 6s infinite 0.8s",
+      },
+      keyframes: {
+        hovering: {
+          '0%, 100%': { transform: 'translateY(0.5rem) rotate(0deg)' },
+          '50%': { transform: 'translateY(-0.25rem) rotate(-1deg)' },
+
+        }
+      }
+    },
+  },
   daisyui: {
     themes: [
       {
