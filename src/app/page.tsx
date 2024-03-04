@@ -1,4 +1,3 @@
-import StarOverlay from "@/components/StarOverlay/StarOverlay";
 import ConfigSection from "@/views/CapabilitiesSection/CapabilitiesSection";
 import HeroSection from "@/views/HeroSection/HeroSection";
 

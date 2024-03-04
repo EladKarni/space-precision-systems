@@ -5,7 +5,7 @@ import Valve from "../../../public/valve.png";
 const ConfigSection = () => {
   return (
     <section>
-      <div className="text-center mb-16">
+      <div className="text-center mb-28">
         <h2 className="text-4xl text-secondary font-semibold mb-2">
           Product Capabilities
         </h2>

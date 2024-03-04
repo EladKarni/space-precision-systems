@@ -1,10 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Logo from "../../../public/logo.svg";
 import Link from "next/link";
+import { motion, useScroll } from "framer-motion";
 
 const Navbar = () => {
+  let { scrollY } = useScroll();
+
   return (
-    <nav className="transparent fixed top-0 w-screen">
+    <motion.nav
+      initial={{ backgroundColor: "transparent" }}
+      className="fixed top-0 w-screen z-10"
+      style={{ backgroundColor: `rgba(0, 0, 0, ${scrollY.get()})` }}
+    >
       <div className="navbar xl:max-w-[1366px] flex justify-between m-auto px-4 2xl:px-0">
         <Link href="/" className="-my-12 lg:-ml-2">
           <Image
@@ -27,7 +36,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

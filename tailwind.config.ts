@@ -15,8 +15,8 @@ const config: Config = {
         "prlx-back": `url("/bg-stars.png")`,
       },
       animation: {
-        "hovering-panel-100": "ease hovering 6s infinite 0.1s reverse",
-        "hovering-panel-300": "ease hovering 6s infinite 0.8s",
+        "hovering-panel-100": "ease-out hovering 5s infinite reverse",
+        "hovering-panel-300": "ease-in hovering 5s infinite",
       },
       keyframes: {
         hovering: {
