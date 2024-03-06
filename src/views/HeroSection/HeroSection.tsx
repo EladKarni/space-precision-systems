@@ -1,6 +1,24 @@
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const HeroSection = () => {
+  const ref = useRef(null);
+  const { scrollYProgress, scrollY } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0]);
   return (
-    <div className="hero w-full max-h-[60vh] max-w-[40vh]">
+    <motion.div
+      ref={ref}
+      className="hero w-full max-h-[60vh] max-w-[40vh] -z-10"
+      style={{
+        scale,
+        y: scrollY,
+        opacity: scale,
+      }}
+    >
       <video
         loop
         autoPlay
@@ -17,7 +35,7 @@ const HeroSection = () => {
           <p className="mb-5 mx-5 text-gray-300">Liftoff Coming Soon</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
