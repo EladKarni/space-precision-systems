@@ -12,13 +12,13 @@ const Navbar = () => {
   const [navBackgroundOpacity, setNavBackgroundOpacity] = useState(1);
 
   useMotionValueEvent(scrollY, "change", () => {
-    setNavBackgroundColor(scrollY.get() > 0 ? "#1d212c" : "transparent");
+    setNavBackgroundColor(scrollY.get() > 150 ? "#1d212c" : "transparent");
     setNavBackgroundOpacity(scrollY.getVelocity() > 0 ? 0 : 1);
   });
 
   return (
     <motion.nav
-      className="fixed top-0 w-screen z-10 duration-300 transition-all ease-in-out"
+      className="fixed top-0 w-screen z-10 duration-300 transition-all ease-in-out py-2"
       style={{
         backgroundColor: navBackgroundColor,
         opacity: navBackgroundOpacity,
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal text font-semibold">
             <li>
-              <Link href={"/"}>Learn More</Link>
+              <Link href={"/"}>Systems</Link>
             </li>
             <li>
               <Link href={"/"}>Contact</Link>

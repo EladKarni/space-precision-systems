@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="spstheme" className="overflow-x-hidden">
-      <body className={clsx(inter.className, "relative h-screen ")}>
+      <body className={clsx(inter.className, "relative h-screen")}>
         <Navbar />
         {children}
         <Footer />

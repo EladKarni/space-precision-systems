@@ -33,7 +33,7 @@ const config: Config = {
         spstheme: {
           "primary": "#414E80",
           "secondary": "#BEC7D8",
-          "accent": "#465063",
+          "accent": "#dab785",
           "neutral": "#3E4B65",
           "base-100": "#212631",
           "info": "#0083ba",

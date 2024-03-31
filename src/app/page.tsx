@@ -1,11 +1,13 @@
 import ConfigSection from "@/views/CapabilitiesSection/CapabilitiesSection";
 import HeroSection from "@/views/HeroSection/HeroSection";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-16 lg:mx-auto mx-8 lg:max-w-[1366px] my-20 relative">
+    <main className="flex flex-col items-center gap-24 lg:max-w-[1366px] my-20 relative mx-auto px-8">
       <HeroSection />
       <ConfigSection />
+      <About />
     </main>
   );
 }

@@ -18,7 +18,7 @@ const SectionBlock = ({
 }: SectionBlockProps) => {
   return (
     <div className="card m-auto lg:m-0">
-      <div className="card bg-secondary/30 min-h-[425px] max-w-[450px] backdrop-blur-sm">
+      <div className="card bg-secondary/10 min-h-[475px] lg:min-h-[485px] max-w-[450px] backdrop-blur-sm">
         <figure
           className={clsx("overflow-visible -m-18 max-h-[175px]", animStagger)}
         >

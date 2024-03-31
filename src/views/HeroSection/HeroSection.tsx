@@ -8,11 +8,11 @@ const HeroSection = () => {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.45], [1, 0]);
   return (
     <motion.div
       ref={ref}
-      className="hero w-full max-h-[60vh] max-w-[40vh] -z-10"
+      className="hero w-full h-screen max-h-[80vh] max-w-[80vh] md:max-w-[80vw] my-16"
       style={{
         scale,
         y: scrollY,
@@ -23,16 +23,25 @@ const HeroSection = () => {
         loop
         autoPlay
         muted
-        className="max-h-[60vh] max-w-[40vh] rounded-full"
+        className="max-h-[80vh] max-w-[80vw] md:max-w-[80vw] rounded-full -z-10"
       >
-        <source src="bg-rotating-earth.webm" type="video/webm" />
+        <source
+          src="bg-rotating-earth.webm"
+          type="video/webm"
+          className=" rotate-12"
+        />
       </video>
       <div className="hero-content text-center text-neutral-content mt-16">
         <div className="max-w-md">
-          <h1 className="mb-5 text-4xl md:text-7xl font-bold text-secondary">
+          <h1 className="mb-5 text-4xl md:text-4xl font-bold text-gray-100">
             Space Precision Systems
           </h1>
-          <p className="mb-5 mx-5 text-gray-300">Liftoff Coming Soon</p>
+          <a
+            className="mb-5 mx-5 text-gray-200 btn btn-primary"
+            href="#approach"
+          >
+            Liftoff 🚀
+          </a>
         </div>
       </div>
     </motion.div>

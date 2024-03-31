@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+    scroll-behavior: smooth;
+        scroll-padding-top: 50px;
     max-width: 100vw;
     background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 1)), url('/bg-stars.png'), #080808;
         background-size: 600px;
