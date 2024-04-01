@@ -20,8 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="spstheme" className="overflow-x-hidden">
-      <body className={clsx(inter.className, "relative h-screen")}>
+    <html lang="en" data-theme="spstheme" className="overflow-x-hidden h-full">
+      <body
+        className={clsx(
+          inter.className,
+          "relative flex flex-col h-screen justify-between pt-[128px]"
+        )}
+      >
         <Navbar />
         {children}
         <Footer />

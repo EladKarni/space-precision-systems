@@ -4,7 +4,7 @@ import Sherwin from "../../../public/sherwin.webp";
 const About = () => {
   return (
     <section>
-      <div className="flex flex-col-reverse xl:flex-row-reverse gap-4">
+      <div className="flex flex-col-reverse md:flex-row-reverse gap-4">
         <div className="flex flex-col justify-between xl:text-xl">
           <h3 className="section-title text-slate-100 font-semibold py-4">
             About
@@ -26,7 +26,7 @@ const About = () => {
             with mechanical design and systems engineering across ruggedized,
             regulated industries (space, defense, industrial, and medical).
           </p>
-          <a href="contact" className="btn btn-primary w-40">
+          <a href="contact" className="btn btn-primary w-40 my-4">
             Contact Us
           </a>
         </div>

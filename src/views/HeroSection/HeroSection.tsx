@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <motion.div
       ref={ref}
-      className="hero w-full h-screen max-h-[80vh] max-w-[80vh] md:max-w-[80vw] my-16"
+      className="hero w-full h-screen max-h-[80vh] max-w-[80vh] md:max-w-[80vw]"
       style={{
         scale,
         y: scrollY,

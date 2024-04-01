@@ -1,7 +1,7 @@
 import SectionBlock from "@/components/SectionBlock/SectionBlock";
-import Gimble from "../../../public/gimble.png";
-import Valve from "../../../public/valve.png";
-import Mechanisms from "../../../public/mechanisms.png";
+import Gimble from "../../../public/gimble.webp";
+import Valve from "../../../public/valve.webp";
+import Mechanisms from "../../../public/mechanisms.webp";
 
 const ConfigSection = () => {
   return (

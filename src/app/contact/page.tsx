@@ -2,8 +2,8 @@ import React from "react";
 
 const contact = () => {
   return (
-    <main className="container flex flex-col justify-center h-screen mx-auto -mb-[128px]">
-      <h3 className="section-title text-slate-100 font-semibold py-4">
+    <main className="container flex flex-col justify-center mx-auto px-4">
+      <h3 className="text-2xl md:text-6xl text-slate-100 font-semibold py-4">
         Contact Us
       </h3>
       <form className="flex flex-col gap-4">
@@ -37,7 +37,7 @@ const contact = () => {
           <svg
             aria-hidden="true"
             focusable="false"
-            className="w-4 h-4 opacity-70"
+            className="w-4 h-4 opacity-70 -scale-x-100"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
