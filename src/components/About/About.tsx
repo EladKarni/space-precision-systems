@@ -1,33 +1,37 @@
-import React from "react";
+import Image from "next/image";
+import Sherwin from "../../../public/sherwin.webp";
 
 const About = () => {
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row-reverse">
-        <div className="flex flex-col justify-between">
-          <h3 className="text-7xl text-slate-100 font-semibold py-4">About</h3>
+      <div className="flex flex-col-reverse xl:flex-row-reverse gap-4">
+        <div className="flex flex-col justify-between xl:text-xl">
+          <h3 className="section-title text-slate-100 font-semibold py-4">
+            About
+          </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            dolore perferendis, ea corrupti consequatur molestias quia et
-            sapiente voluptatum voluptatibus vel cupiditate fugiat, distinctio
-            esse!
+            Space Precision Systems (“SPS”) is based in Pittsburgh, PA. SPS
+            provides customization without the risks, costs, and lead times
+            typically associated with new space developments.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            dolore perferendis, ea corrupti consequatur molestias quia et
-            sapiente voluptatum voluptatibus vel cupiditate fugiat, distinctio
-            esse! Natus illo in omnis obcaecati! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Obcaecati dolore perferendis, ea
-            corrupti consequatur molestias quia et sapiente voluptatum
-            voluptatibus vel cupiditate fugiat, distinctio esse! Natus illo in
-            omnis obcaecati!
+            We meet tight procurement schedules, and highly value quality
+            project management and proactive communication with our commercial
+            and government customers.
           </p>
-          <button className="btn btn-primary w-40 my-4">Contact Us</button>
+          <p>
+            The team tests and incorporates state-of-the-art mechanism and
+            manufacturing technologies into our designs, and has a history of
+            early adoption of now-standard components. We have deep expertise
+            with mechanical design and systems engineering across ruggedized,
+            regulated industries (space, defense, industrial, and medical).
+          </p>
+          <button className="btn btn-primary w-40">Contact Us</button>
         </div>
-        <div className="pr-0 md:pr-8">
-          <img
-            src="https://picsum.photos/2750/2000"
-            alt="placeholder"
+        <div>
+          <Image
+            src={Sherwin}
+            alt="Sherwin (co-founder) holding a gimbal"
             className="rounded-md"
           />
         </div>

@@ -11,6 +11,10 @@
         background-attachment: fixed;
 }
 
+.section-title {
+    font-size: 6rem;
+    line-height: 1;
+}
 
 @media (prefers-color-scheme: dark) {
     :root {

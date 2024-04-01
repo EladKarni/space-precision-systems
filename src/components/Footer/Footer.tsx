@@ -18,9 +18,9 @@ const Footer = () => {
             />
           </Link>
           <p>
-            ACME Industries Ltd.
+            Space Precision Systems Inc.
             <br />
-            Providing reliable tech since 1992
+            Founded 2023
           </p>
         </aside>
         <nav className="flex text-center gap-2 italic">
