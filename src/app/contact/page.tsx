@@ -6,7 +6,7 @@ const contact = () => {
       <h3 className="section-title text-slate-100 font-semibold py-4">
         Contact Us
       </h3>
-      <form className="flex flex-col gap-4" netlify>
+      <form className="flex flex-col gap-4">
         <label className="input input-bordered flex items-center gap-2">
           <input type="text" className="grow" placeholder="Name" />
         </label>
@@ -52,9 +52,10 @@ const contact = () => {
           className="input input-bordered flex items-center gap-2 min-h-48"
           placeholder="Message"
         />
-        <button type="submit" className="btn btn-primary w-40">
+        <button disabled type="submit" className="btn btn-primary w-40">
           Send
         </button>
+        <i>Under Construction</i>
       </form>
     </main>
   );
