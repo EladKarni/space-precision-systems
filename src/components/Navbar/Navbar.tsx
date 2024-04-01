@@ -12,7 +12,7 @@ const Navbar = () => {
   const [navBackgroundOpacity, setNavBackgroundOpacity] = useState(1);
 
   useMotionValueEvent(scrollY, "change", () => {
-    setNavBackgroundColor(scrollY.get() > 150 ? "#1d212c" : "transparent");
+    setNavBackgroundColor(scrollY.get() > 50 ? "#1d212c" : "transparent");
     setNavBackgroundOpacity(scrollY.getVelocity() > 0 ? 0 : 1);
   });
 
