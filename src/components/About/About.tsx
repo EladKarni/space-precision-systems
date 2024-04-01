@@ -26,7 +26,9 @@ const About = () => {
             with mechanical design and systems engineering across ruggedized,
             regulated industries (space, defense, industrial, and medical).
           </p>
-          <button className="btn btn-primary w-40">Contact Us</button>
+          <a href="contact" className="btn btn-primary w-40">
+            Contact Us
+          </a>
         </div>
         <div>
           <Image

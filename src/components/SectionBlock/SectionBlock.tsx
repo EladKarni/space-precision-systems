@@ -33,7 +33,9 @@ const SectionBlock = ({
           <p>{snippet}</p>
           {children}
           <div className="card-actions justify-start pt-2">
-            <button className="btn btn-primary">Learn More</button>
+            <a href="/coming-soon" className="btn btn-primary">
+              Learn More
+            </a>
           </div>
         </div>
       </div>

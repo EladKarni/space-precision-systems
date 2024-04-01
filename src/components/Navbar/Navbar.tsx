@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal text font-semibold">
             <li>
-              <Link href={"/"}>Systems</Link>
+              <Link href={"/coming-soon"}>Systems</Link>
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
