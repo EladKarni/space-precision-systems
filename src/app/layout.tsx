@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Space Precision Systems",
   description:
-    "Space Precision Systems is a company that specializes in the design and manufacturing of precision mechanical parts for space applications. We are a team of engineers and designers who are passionate about space exploration and are dedicated to providing the highest quality products to our customers.",
+    "Space Precision delivers the perfect space mechanism solution no matter the mass, volume, functional, or environmental constraints of an application.",
 };
 
 export default function RootLayout({
