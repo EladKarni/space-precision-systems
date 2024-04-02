@@ -40,7 +40,7 @@ const ConfigSection = () => {
         <SectionBlock
           title="Leak-Resistant Valves"
           snippet="Dynamic flow and pressure control valves with fault-detection as a function. Uses
-          patent-pending triple+ non-leak seal technology."
+          patent-pending, triple+ redundancy, non-leak seal technology."
           animStagger="animate-hovering-panel-300"
           image={Valve}
         >
