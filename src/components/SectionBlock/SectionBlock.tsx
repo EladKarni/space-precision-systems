@@ -24,7 +24,7 @@ const SectionBlock = ({
         >
           <Image
             src={image}
-            alt="alt text here"
+            alt={title}
             className="scale-[.65] md:scale-75 -mt-8"
           />
         </figure>
