@@ -4,7 +4,7 @@ import Sherwin from "../../../public/sherwin.webp";
 const About = () => {
   return (
     <section>
-      <div className="flex flex-col-reverse md:flex-row-reverse gap-4">
+      <div className="flex flex-col-reverse md:flex-row-reverse gap-10">
         <div className="flex flex-col justify-between xl:text-xl">
           <h3 className="section-title text-slate-100 font-semibold py-4">
             About
