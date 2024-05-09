@@ -1,25 +1,25 @@
 "use client";
 import React from "react";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const ContactPage = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
-  // const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
-  //   event.preventDefault();
+  const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
+    event.preventDefault();
 
-  //   const myForm = event.target;
-  //   const formData = new FormData(myForm);
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-  //   fetch("__form.html", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     // @ts-ignore
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //     .then(() => router.push("/success"))
-  //     .catch((error) => alert(error));
-  // };
+    fetch("__form.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // @ts-ignore
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => router.push("/success"))
+      .catch((error) => alert(error));
+  };
 
   return (
     <main className="container flex flex-col justify-center mx-auto px-4">
@@ -27,13 +27,14 @@ const ContactPage = () => {
         Contact Us
       </h3>
       <form
-        name="contact"
-        action="/success"
         className="flex flex-col gap-4"
+        name="contact"
         method="post"
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
+        action={"/success"}
         data-netlify="true"
+        onSubmit={handleSubmit}
       >
         <label
           className="input input-bordered flex items-center gap-2"
@@ -54,6 +55,7 @@ const ContactPage = () => {
             <input name="bot-field" />
           </label>
         </p>
+        <input type="hidden" name="form-name" value="contact" />
         <label
           className="input input-bordered flex items-center gap-2"
           htmlFor="yourorg"
