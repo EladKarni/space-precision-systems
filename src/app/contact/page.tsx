@@ -11,7 +11,7 @@ const ContactPage = () => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-    fetch("__form.html", {
+    fetch("/__form.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       // @ts-ignore
