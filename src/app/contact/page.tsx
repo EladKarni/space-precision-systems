@@ -1,25 +1,25 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 const ContactPage = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
-    event.preventDefault();
+  // const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
+  //   event.preventDefault();
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
+  //   const myForm = event.target;
+  //   const formData = new FormData(myForm);
 
-    fetch("/__form.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      // @ts-ignore
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => router.push("/success"))
-      .catch((error) => alert(error));
-  };
+  //   fetch("__form.html", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     // @ts-ignore
+  //     body: new URLSearchParams(formData).toString(),
+  //   })
+  //     .then(() => router.push("/success"))
+  //     .catch((error) => alert(error));
+  // };
 
   return (
     <main className="container flex flex-col justify-center mx-auto px-4">
@@ -34,7 +34,6 @@ const ContactPage = () => {
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
         data-netlify="true"
-        onSubmit={handleSubmit}
       >
         <label
           className="input input-bordered flex items-center gap-2"
