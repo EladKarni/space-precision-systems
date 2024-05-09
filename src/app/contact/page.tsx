@@ -1,6 +1,26 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
-const contact = () => {
+const ContactPage = () => {
+  const router = useRouter();
+
+  const handleSubmit = (event: { preventDefault: () => void; target: any }) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("__form.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // @ts-ignore
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => router.push("/success"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <main className="container flex flex-col justify-center mx-auto px-4">
       <h3 className="text-2xl md:text-6xl text-slate-100 font-semibold py-4">
@@ -11,7 +31,10 @@ const contact = () => {
         action="/success"
         className="flex flex-col gap-4"
         method="post"
+        netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
         data-netlify="true"
+        onSubmit={handleSubmit}
       >
         <label
           className="input input-bordered flex items-center gap-2"
@@ -25,6 +48,12 @@ const contact = () => {
             id="yourname"
           />
         </label>
+        <p className="hidden">
+          <label>
+            {"Don’t fill this out if you’re human: "}
+            <input name="bot-field" />
+          </label>
+        </p>
         <label
           className="input input-bordered flex items-center gap-2"
           htmlFor="yourorg"
@@ -96,7 +125,13 @@ const contact = () => {
           name="message"
           id="yourmessage"
         />
-        <button type="submit" className="btn btn-primary w-40 mb-4">
+        <div data-netlify-recaptcha="true"></div>
+
+        <button
+          type="submit"
+          value="Submit"
+          className="btn btn-primary w-40 mb-4"
+        >
           Send
         </button>
       </form>
@@ -104,4 +139,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default ContactPage;
